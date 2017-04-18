@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="university" class="com.spring.definitioninheritance.University">
+		<property name="courseName" value="ComputerScience" />
+		<property name="courseFees" value="10000" />
+	</bean>
+
+	<bean id="college" class="com.spring.definitioninheritance.College" parent="university">
+		<property name="teachersName" value="Test_Teacher" />
+		<property name="studentName" value="Test_Student" />
+	</bean>
+
+
+</beans>
