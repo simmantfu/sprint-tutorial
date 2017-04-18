@@ -21,6 +21,7 @@ public class CookiesFactory {
 	}
 	public void setCookePrice(String cookePrice) {
 		this.cookePrice = cookePrice;
+		
 	}
 	
 }
